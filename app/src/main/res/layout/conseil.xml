@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="INFORMATION"
+               android:textSize="20dp"
+               android:textColor="@color/colorPrimaryDark"
+               android:gravity="center"
+               android:background="#998A14"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="L'application MonIMC est developpée par des etudiants de la licence 3 Informatique de l'UGB.
+Elle a pour but d'aider les utilisateurs à connaitre leur Indice de Masse Corporelle(IMC).
+Cet IMC permet à toute personne de savoir si son poids est normal, insuffisant ou excéssif.
+Cependant trouver son poids idéal est avant tout une question de ressenti : il s'agit en priorité de se sentir bien dans son corps.
+Le role de l'IMC est principalement de prevenir les risques d'obésité et de maigreur pouvant avoir des conséquences néfastes sur la santé.
+C'est dans cet optique que nous avions mis en place cette application, elle est gratuite et le restera pour toujours.
+"
+                android:textSize="14dp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginTop="20dp"
+                android:gravity="center"/>
+
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="84dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="CONSEIL"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp"
+                android:background="#998A14"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dénutrition - IMC inférieur à 18.5
+La dénutrition est caractérisé par une perte de masse grasse et de muscle. Plus la dénutrition est importante, plus l'IMC est faible."
+                android:textSize="14dp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginTop="5dp"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Surpoids - IMC compris entre 25 et 30
+Un surpoids entraine des risques pour la santé supplémentaire. Un meilleur équilibre alimentaire et une plus grande activité physique sont des solutions."
+                android:textSize="14dp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginTop="5dp"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Obésité - IMC supérieur à 30
+Un IMC supérieur à 30 suffit au diagnostic de l'obésité."
+                android:textSize="14dp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginTop="5dp"
+                android:gravity="center"/>
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/conseil" />
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

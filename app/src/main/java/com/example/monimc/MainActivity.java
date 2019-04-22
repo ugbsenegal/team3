@@ -1,0 +1,25 @@
+package com.example.monimc;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+
+
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+    public void accueil(View view){
+        startActivity(new Intent(this,calculimc.class));
+    }
+    public void historique(View view){
+        startActivity(new Intent(this,historique.class));
+    }
+    public void conseil(View view){
+        startActivity(new Intent(this,conseil.class));
+    }
+}
